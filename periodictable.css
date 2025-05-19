@@ -1,0 +1,71 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f8ff;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+}
+
+h1 {
+  margin-top: 20px;
+  font-size: 2.5rem;
+  color: #333;
+}
+
+.table-container {
+  margin: 40px auto;
+  overflow-x: auto;
+  padding: 0 10px;
+}
+
+.periodic-table {
+  border-collapse: collapse;
+  margin: auto;
+}
+
+.periodic-table td {
+  width: 70px;
+  height: 70px;
+  border: 1px solid #ccc;
+  text-align: center;
+  vertical-align: middle;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0,0,0,0.1);
+  font-weight: bold;
+  font-size: 0.85rem;
+}
+
+td p {
+  margin: 4px 0;
+}
+
+/* Element Categories */
+.element { color: #fff; }
+
+.nonmetal { background-color: #4caf50; }
+.halogen { background-color: #f44336; }
+.noble-gas { background-color: #9c27b0; }
+.alkali-metal { background-color: #ff9800; }
+.alkaline-earth { background-color: #ffeb3b; color: #000; }
+.transition-metal { background-color: #2196f3; }
+.metalloid { background-color: #009688; }
+.post-transition { background-color: #795548; }
+.lan-metal{background-color: blue;}
+.act-metal{background-color: #065d29;}
+.non{background-color: gray;}
+.pur{
+background-color: purple;
+}
+@media (max-width: 600px) {
+  .periodic-table td {
+    width: 45px;
+    height: 45px;
+    font-size: 0.65rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
