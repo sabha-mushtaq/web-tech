@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tables</title>
+  <style>
+    .header {
+      display: flex;
+      justify-content: left;
+      border: solid black 2px;
+      padding: 10px;
+    }
+
+    ul {
+      display: flex;
+      padding: 0;
+      margin: 0;
+    }
+
+    li {
+      padding-right: 55px;
+      list-style-type: none;
+    }
+
+    .main {
+      height: 600px;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+    }
+
+    .main > div {
+      width: 45%;
+      height: 100%;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: left;
+    }
+   .body{
+    border: solid black 1px;
+   }
+   a{
+    text-decoration: none;
+   }
+   a:hover{
+text-decoration: none;
+color: brown;
+
+   }
+  </style>
+</head>
+<body >
+<div class="body">
+  <div class="header">
+    <nav>
+      <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About Us</a></li>
+        <li><a href="">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+<!-- main div -->
+  <div class="main">
+    <!-- table first -->
+    <div>
+      <table>
+        <caption>TABLE ONE</caption>
+        <tr>
+          <th colspan="2"> Name</th>
+         <th>Roll No</th>
+        </tr>
+        <tr>
+          <td>Sabha</td>
+          <td>Mushtaq</td>
+          <td>101</td>
+        </tr>
+        <tr>
+          <td>Rakia</td>
+          <td>Andrabi</td>
+          <td>102</td>
+        </tr>
+        <tr>
+          <td>Hadiya</td>
+          <td>Iqbal</td>
+          <td>103</td>
+        </tr>
+      </table>
+    </div>
+<!-- table second -->
+    <div>
+        <table >
+            <caption >TABLE TWO</caption>
+            <tr>
+              <th>Name</th>
+              <td>Sabha</td>
+            </tr>
+            <tr>
+              <th rowspan="2">PH. No</th>
+              <td>123456788</td>
+            </tr>
+            <tr>
+              <td>65765645</td>
+            </tr>
+          </table>
+          
+    </div>
+  </div>
+ </div>
+</body>
+</html>
